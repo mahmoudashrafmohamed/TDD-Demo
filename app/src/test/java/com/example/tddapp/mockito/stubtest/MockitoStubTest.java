@@ -9,6 +9,8 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 public class MockitoStubTest {
@@ -39,6 +41,14 @@ public class MockitoStubTest {
     @Test
     public void testPersonFullNameThrowException(){
         when(person.getFullName()).thenThrow(new IllegalStateException("Test then throw exception."));
+    }
+
+    // verify mockito
+    @Test
+    public void testVerifyTimes(){
+       person.getAge();
+       person.getAge();
+       verify(person,times(2)).getAge();
     }
 
 }
