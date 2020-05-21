@@ -1,4 +1,4 @@
-package com.example.tddapp.suitetest;
+package com.example.tddapp.junit.suitetest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

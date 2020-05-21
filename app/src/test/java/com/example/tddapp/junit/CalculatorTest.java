@@ -1,4 +1,6 @@
-package com.example.tddapp;
+package com.example.tddapp.junit;
+
+import com.example.tddapp.Calculator;
 
 import org.junit.After;
 import org.junit.AfterClass;
